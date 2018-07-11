@@ -13,7 +13,7 @@ class Login extends React.Component {
             <LinearGradient style={{flex: 1, justifyContent: 'center'}} colors={['#393538', '#9f3d94', '#393538']}>
                 <View style={{marginHorizontal: 40, alignItems: 'center'}}>
                     <Image style={{width: 287, height: 200,}}
-                           source={require('./assets/img/groove4.png')}
+                           source={require('../assets/img/groove4.png')}
                     />
                     <Item style={{marginVertical: 5}}>
                         <Icon type="FontAwesome" active name='user-o' style={{color: '#FFF'}}/>
