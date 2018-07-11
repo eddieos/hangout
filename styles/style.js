@@ -6,4 +6,10 @@ export default StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
+    socialButton: {
+        width: 50,
+        height: 50,
+        backgroundColor: '#e7e7e7',
+        marginHorizontal: 5
+    }
 });
