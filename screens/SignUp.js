@@ -6,7 +6,6 @@ import LinearGradient from 'react-native-linear-gradient';
 import styles from "../styles/style";
 
 class SignUp extends React.Component {
-    // static navigationOptions = { header: null };
     render() {
         // const { navigate } = this.props.navigation;
         return (

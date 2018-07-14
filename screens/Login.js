@@ -6,9 +6,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import styles from "../styles/style";
 
 class Login extends React.Component {
-    // static navigationOptions = { header: null };
     render() {
-        // const { navigate } = this.props.navigation;
+        const { navigate } = this.props.navigation;
         return (
             <LinearGradient style={{flex: 1, justifyContent: 'center'}} colors={['#393538', '#9f3d94', '#393538']}>
                 <View style={{marginHorizontal: 40, alignItems: 'center'}}>
@@ -26,7 +25,11 @@ class Login extends React.Component {
                                placeholderTextColor="#ccc"
                                secureTextEntry/>
                     </Item>
-                    <Button style={{marginVertical: 30}} block bordered light>
+                    <Button style={{marginVertical: 30}} block bordered light
+                            title="Home"
+                            onPress={() =>
+                                navigate('Home', { name: 'Home' })
+                            }>
                         <Text>Sign In</Text>
                     </Button>
 
