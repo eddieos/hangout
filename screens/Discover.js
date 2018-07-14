@@ -4,7 +4,7 @@ import {Button, Icon, Text, Item, Input} from 'native-base';
 
 import styles from "../styles/style";
 
-class Profile extends React.Component {
+class Discover extends React.Component {
     render() {
         // const { navigate } = this.props.navigation;
         return (
@@ -12,11 +12,11 @@ class Profile extends React.Component {
                 <StatusBar barStyle="dark-content"/>
 
 
-                <Text>Profile</Text>
+                <Text>Discover</Text>
 
             </View>
         );
     }
 }
 
-export default Profile;
+export default Discover;

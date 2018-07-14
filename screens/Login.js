@@ -33,7 +33,11 @@ class Login extends React.Component {
                         <Text>Sign In</Text>
                     </Button>
 
-                    <Button block transparent light>
+                    <Button block transparent light
+                            title="Forgot Password"
+                            onPress={() =>
+                                navigate('ForgotPassword', { name: 'ForgotPassword' })
+                            }>
                         <Text>Forgot Your Password?</Text>
                     </Button>
 
@@ -54,7 +58,11 @@ class Login extends React.Component {
                 </View>
                 <View style={{marginHorizontal: 40, marginTop: 20}}>
                     <Text style={{fontSize: 12, color: '#FFF', textAlign: 'center'}}>Don't Have an Account?</Text>
-                    <Button style={{marginVertical: 10}} block bordered light>
+                    <Button style={{marginVertical: 10}} block bordered light
+                            title="SignUp"
+                            onPress={() =>
+                                navigate('SignUp', { name: 'SignUp' })
+                            }>
                         <Text>Register Now</Text>
                     </Button>
                 </View>
